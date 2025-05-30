@@ -1,0 +1,108 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #222;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 0;
+  color: #2e2e2a;
+}
+
+.sub {
+  font-size: 1.2rem;
+  color: #600;
+  margin-top: 0.5rem;
+}
+
+header {
+  background: linear-gradient(to right, #e0dcd5, #d0cfc9);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.photo {
+  background: white ;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+#modal-caption {
+  color: #eee;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 3rem;
+  color:white  ;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2e2e2e;
+  color:white  ;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}

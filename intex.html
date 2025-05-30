@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festejando: Conexão entre Cidade e Campo</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Festejando</h1>
+      <p class="sub">Conexão entre Cidade e Campo</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery">
+      <div class="photo" onclick="openModal('foto1.jpg', 'Feira agrícola local na cidade')">
+        <img src="foto1.jpg" alt="Feira agrícola"/>
+        <p>Feira agrícola local na cidade</p>
+      </div>
+      <div class="photo" onclick="openModal('foto2.jpg', 'Colheita no campo ao pôr do sol')">
+        <img src="foto2.jpg" alt="Colheita no campo"/>
+        <p>Colheita no campo ao pôr do sol</p>
+      </div>
+      <div class="photo" onclick="openModal('foto3.jpg', 'Encontro cultural urbano-rural')">
+        <img src="foto3.jpg" alt="Encontro cultural"/>
+        <p>Encontro cultural urbano-rural</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" />
+    <div id="modal-caption"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Festejando. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

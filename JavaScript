@@ -1,0 +1,13 @@
+function openModal(src, caption) {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const modalCaption = document.getElementById("modal-caption");
+
+  modal.style.display = "flex";
+  modalImg.src = src;
+  modalCaption.innerText = caption;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
